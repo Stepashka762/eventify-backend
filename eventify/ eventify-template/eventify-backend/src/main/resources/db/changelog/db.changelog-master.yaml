@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: eventify
+      failOnError: false
+      changes:
+        - sqlFile:
+            path: db/changelog/versions/V1__initial_schema.sql
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: 2
+      author: eventify
+      failOnError: false
+      changes:
+        - sqlFile:
+            path: db/changelog/versions/V2__add_indexes.sql
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: 3
+      author: eventify
+      changes:
+        - sqlFile:
+            path: db/changelog/versions/V3__insert_admin_user.sql
+            splitStatements: true
+            stripComments: true
