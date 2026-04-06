@@ -95,6 +95,7 @@ public class BookingService {
                 .toList();
     }
 
+
     @Transactional
     public BookingResponse updateBooking(Long bookingId, UpdateBookingRequest request, Long userId, boolean isAdmin) {
         log.debug("Updating booking: {} for user: {}", bookingId, userId);

@@ -18,6 +18,7 @@ public class ErrorResponse {
     private String message;
     private List<ErrorDetail> details;
 
+
     @Data
     @Builder
     @NoArgsConstructor

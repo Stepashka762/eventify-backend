@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UpdateBookingRequest {
 
+
     @NotNull(message = "Ticket count is required")
     @Min(value = 1, message = "Ticket count must be at least 1")
     private Integer ticketCount;

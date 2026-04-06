@@ -1,3 +1,4 @@
+
 package com.eventify.eventify_backend.exception;
 
 import lombok.Getter;

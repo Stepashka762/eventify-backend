@@ -13,6 +13,7 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 @Mapper(componentModel = "spring")
 public interface EventMapper {
 
+
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "availableTickets", source = "totalTickets")
     @Mapping(target = "createdAt", ignore = true)

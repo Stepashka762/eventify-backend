@@ -1,3 +1,4 @@
+
 package com.eventify.eventify_backend.exception;
 
 public class UnauthorizedAccessException extends BusinessException {

@@ -16,6 +16,7 @@ import java.util.Optional;
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
 
+
     Page<Event> findByDateTimeBetween(LocalDateTime from, LocalDateTime to, Pageable pageable);
 
     @Query("SELECT e FROM Event e WHERE e.dateTime >= CURRENT_TIMESTAMP ORDER BY e.dateTime ASC")

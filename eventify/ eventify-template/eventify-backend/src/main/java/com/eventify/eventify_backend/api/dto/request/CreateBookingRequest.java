@@ -1,5 +1,6 @@
 package com.eventify.eventify_backend.api.dto.request;
 
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

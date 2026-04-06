@@ -1,3 +1,4 @@
+
 package com.eventify.eventify_backend.exception;
 
 public class BookingExpiredException extends BusinessException {

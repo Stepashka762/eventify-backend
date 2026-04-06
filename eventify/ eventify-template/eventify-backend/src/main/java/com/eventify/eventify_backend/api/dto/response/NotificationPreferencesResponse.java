@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class NotificationPreferencesResponse {
 
+
     private Boolean notifyNewEvents;
     private Boolean notifyUpcoming;
     private Integer notifyBeforeHours;

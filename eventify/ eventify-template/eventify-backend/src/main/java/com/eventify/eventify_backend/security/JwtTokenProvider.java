@@ -16,6 +16,7 @@ import java.util.Date;
 @Slf4j
 @Component
 @RequiredArgsConstructor
+
 public class JwtTokenProvider {
 
     private final JwtConfig jwtConfig;

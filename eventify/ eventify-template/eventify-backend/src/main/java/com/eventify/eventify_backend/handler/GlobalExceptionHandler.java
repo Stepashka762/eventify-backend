@@ -1,3 +1,4 @@
+
 package com.eventify.eventify_backend.handler;
 
 import com.eventify.eventify_backend.api.dto.response.ErrorResponse;

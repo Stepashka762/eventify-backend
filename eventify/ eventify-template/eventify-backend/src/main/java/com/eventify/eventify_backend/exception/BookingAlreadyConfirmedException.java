@@ -1,5 +1,6 @@
 package com.eventify.eventify_backend.exception;
 
+
 public class BookingAlreadyConfirmedException extends BusinessException {
 
     public BookingAlreadyConfirmedException(Long bookingId) {

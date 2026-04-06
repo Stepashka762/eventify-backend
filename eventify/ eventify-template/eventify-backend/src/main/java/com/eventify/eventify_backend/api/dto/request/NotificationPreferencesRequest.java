@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class NotificationPreferencesRequest {
 
+
     private Boolean notifyNewEvents;
 
     private Boolean notifyUpcoming;

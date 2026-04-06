@@ -19,6 +19,7 @@ import java.util.List;
 @EntityListeners(AuditingEntityListener.class)
 public class Event {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

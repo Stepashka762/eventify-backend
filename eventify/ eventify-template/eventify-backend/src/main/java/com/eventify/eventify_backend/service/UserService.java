@@ -46,6 +46,7 @@ public class UserService {
                 .orElseThrow(() -> new ResourceNotFoundException("User", email));
     }
 
+
     @Transactional(readOnly = true)
     public User findById(Long id) {
         log.debug("Finding user by id: {}", id);
