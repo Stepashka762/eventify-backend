@@ -1,0 +1,118 @@
+2026-04-05T17:41:51.426+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.EventifyBackendApplicationTests    : Starting EventifyBackendApplicationTests using Java 21.0.7 with PID 9704 (started by stepa in C:\skillbox\java_web_development_final_project\eventify\ eventify-template\eventify-backend)
+2026-04-05T17:41:51.438+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.EventifyBackendApplicationTests    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-04-05T17:41:51.440+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.EventifyBackendApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T17:41:51.492+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ce7e83c
+2026-04-05T17:41:52.885+05:00  INFO 9704 --- [eventify-backend] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05T17:41:52.976+05:00  INFO 9704 --- [eventify-backend] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2026-04-05T17:41:53.962+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05T17:41:54.041+05:00  INFO 9704 --- [eventify-backend] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-04-05T17:41:54.078+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05T17:41:54.311+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05T17:41:54.344+05:00  INFO 9704 --- [eventify-backend] [Test worker] com.zaxxer.hikari.HikariDataSource       : EventifyHikariPool - Starting...
+2026-04-05T17:41:54.557+05:00  INFO 9704 --- [eventify-backend] [Test worker] com.zaxxer.hikari.pool.HikariPool        : EventifyHikariPool - Added connection org.postgresql.jdbc.PgConnection@782dc5
+2026-04-05T17:41:54.560+05:00  INFO 9704 --- [eventify-backend] [Test worker] com.zaxxer.hikari.HikariDataSource       : EventifyHikariPool - Start completed.
+2026-04-05T17:41:54.620+05:00  WARN 9704 --- [eventify-backend] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-05T17:41:55.797+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05T17:41:55.912+05:00  INFO 9704 --- [eventify-backend] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05T17:41:56.031+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2026-04-05T17:41:56.053+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext
+2026-04-05T17:41:56.316+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.existsByEmail
+2026-04-05T17:41:56.319+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.existsByEmail
+2026-04-05T17:41:56.373+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.countByRole
+2026-04-05T17:41:56.374+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.countByRole
+2026-04-05T17:41:56.399+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-05T17:41:56.566+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.updateTelegramChatId.count
+2026-04-05T17:41:56.767+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByEmail
+2026-04-05T17:41:56.767+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByEmail
+2026-04-05T17:41:56.769+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByTelegramChatId
+2026-04-05T17:41:56.769+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByTelegramChatId
+2026-04-05T17:41:56.772+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByRole
+2026-04-05T17:41:56.772+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByRole
+2026-04-05T17:41:56.785+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findUsersWithTelegram.count
+2026-04-05T17:41:56.826+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query User.findByEmailIgnoreCase
+2026-04-05T17:41:56.827+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query User.findByEmailIgnoreCase
+2026-04-05T17:41:56.932+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.getTotalConfirmedTickets.count
+2026-04-05T17:41:56.976+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findAvailableEvents.count
+2026-04-05T17:41:56.983+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Event.findByTitleContainingIgnoreCase
+2026-04-05T17:41:56.983+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findByTitleContainingIgnoreCase
+2026-04-05T17:41:56.987+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.incrementAvailableTickets.count
+2026-04-05T17:41:57.003+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findPastEvents.count
+2026-04-05T17:41:57.012+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.decrementAvailableTickets.count
+2026-04-05T17:41:57.017+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findByIdAndAvailableTicketsGreaterThanEqual.count
+2026-04-05T17:41:57.021+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findUpcomingEvents.count
+2026-04-05T17:41:57.024+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Event.findByDateTimeBetween
+2026-04-05T17:41:57.024+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findByDateTimeBetween
+2026-04-05T17:41:57.027+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Event.findByDateTimeBetween
+2026-04-05T17:41:57.029+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Event.findByDateTimeBetween
+2026-04-05T17:41:57.117+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findConfirmedByEventId.count
+2026-04-05T17:41:57.121+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findConfirmedByUser.count
+2026-04-05T17:41:57.126+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.adminCancelBooking.count
+2026-04-05T17:41:57.143+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findPendingByUser.count
+2026-04-05T17:41:57.146+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.findByUserIdAndEventId
+2026-04-05T17:41:57.146+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByUserIdAndEventId
+2026-04-05T17:41:57.153+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.cancelBookingByIdAndUser.count
+2026-04-05T17:41:57.157+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findExpiredUnconfirmedBookings.count
+2026-04-05T17:41:57.159+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.findByIdAndUser
+2026-04-05T17:41:57.160+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByIdAndUser
+2026-04-05T17:41:57.162+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findAllExpiredUnconfirmedBookings.count
+2026-04-05T17:41:57.164+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.findByEventId
+2026-04-05T17:41:57.165+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByEventId
+2026-04-05T17:41:57.166+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.findByConfirmedFalseAndCancelledFalse
+2026-04-05T17:41:57.167+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByConfirmedFalseAndCancelledFalse
+2026-04-05T17:41:57.168+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.findByUser
+2026-04-05T17:41:57.169+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByUser
+2026-04-05T17:41:57.171+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.confirmBookingById.count
+2026-04-05T17:41:57.175+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.findByEventIdAndConfirmed.count
+2026-04-05T17:41:57.181+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.cancelExpiredBookingsForEvent.count
+2026-04-05T17:41:57.183+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Looking up named query Booking.countByEventIdAndConfirmedTrue
+2026-04-05T17:41:57.184+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.countByEventIdAndConfirmedTrue
+2026-04-05T17:41:57.188+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.d.jpa.repository.query.NamedQuery    : Did not find named query Booking.getTotalConfirmedTicketsForEvent.count
+2026-04-05T17:41:57.857+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-04-05T17:41:58.136+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 25 mappings in 'requestMappingHandlerMapping'
+2026-04-05T17:41:58.318+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-04-05T17:41:58.407+05:00  INFO 9704 --- [eventify-backend] [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@401516ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@520d0137, org.springframework.security.web.context.SecurityContextHolderFilter@52a3a9ef, org.springframework.security.web.header.HeaderWriterFilter@6f45872b, org.springframework.web.filter.CorsFilter@73eed7b0, org.springframework.security.web.authentication.logout.LogoutFilter@4a742630, com.eventify.eventify_backend.security.JwtTokenFilter@73b6fbd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d7232a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b58b11f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7568f5bc, org.springframework.security.web.session.SessionManagementFilter@568c71de, org.springframework.security.web.access.ExceptionTranslationFilter@697c0ae6, org.springframework.security.web.access.intercept.AuthorizationFilter@4748a39a]
+2026-04-05T17:41:58.687+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-05T17:41:58.735+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-05T17:41:59.152+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.EventifyBackendApplicationTests    : Started EventifyBackendApplicationTests in 8.108 seconds (process running for 9.27)
+2026-04-05T17:41:59.161+05:00 DEBUG 9704 --- [eventify-backend] [scheduling-1] c.e.e.scheduler.BookingCleanupScheduler  : Running expired bookings cleanup...
+2026-04-05T17:41:59.172+05:00 DEBUG 9704 --- [eventify-backend] [scheduling-1] c.e.e.service.BookingService             : Cleaning up expired bookings
+2026-04-05T17:41:59.282+05:00 DEBUG 9704 --- [eventify-backend] [scheduling-1] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.cancelled,
+        b1_0.cancelled_at,
+        b1_0.confirmed,
+        b1_0.created_at,
+        b1_0.event_id,
+        b1_0.expiry_time,
+        b1_0.ticket_count,
+        b1_0.user_id 
+    from
+        bookings b1_0 
+    where
+        b1_0.confirmed=false 
+        and b1_0.cancelled=false 
+        and b1_0.expiry_time<?
+2026-04-05T17:41:59.297+05:00  INFO 9704 --- [eventify-backend] [scheduling-1] c.e.e.service.BookingService             : Cleaned up 0 expired bookings
+2026-04-05T17:42:00.002+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.controller.AuthController          : Register request for email: test@example.com
+2026-04-05T17:42:00.216+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.controller.AuthController          : Login request for email: test@example.com
+2026-04-05T17:42:00.321+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.controller.EventController         : GET /events - page: 0, size: 20
+2026-04-05T17:42:00.332+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.controller.EventController         : GET /events/1
+2026-04-05T17:42:00.582+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Deleting event with id: 999
+2026-04-05T17:42:00.619+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Creating new event: Test Event
+2026-04-05T17:42:00.620+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Event created successfully with id: 1
+2026-04-05T17:42:00.640+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Getting event by id: 1
+2026-04-05T17:42:00.648+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Deleting event with id: 1
+2026-04-05T17:42:00.649+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Event deleted successfully with id: 1
+2026-04-05T17:42:00.657+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.EventService               : Getting event by id: 999
+2026-04-05T17:42:00.761+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Registering user with email: test@example.com
+2026-04-05T17:42:00.762+05:00  INFO 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : User registered successfully with email: test@example.com, id: 1
+2026-04-05T17:42:00.769+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Finding user by email: test@example.com
+2026-04-05T17:42:00.780+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Finding user by id: 999
+2026-04-05T17:42:00.786+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Registering user with email: test@example.com
+2026-04-05T17:42:00.792+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Finding user by email: test@example.com
+2026-04-05T17:42:00.797+05:00 DEBUG 9704 --- [eventify-backend] [Test worker] c.e.e.service.UserService                : Finding user by id: 1
+2026-04-05T17:42:00.812+05:00 DEBUG 9704 --- [eventify-backend] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ce7e83c, started on Sun Apr 05 17:41:51 YEKT 2026
+2026-04-05T17:42:00.825+05:00  INFO 9704 --- [eventify-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05T17:42:00.828+05:00  INFO 9704 --- [eventify-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : EventifyHikariPool - Shutdown initiated...
+2026-04-05T17:42:00.834+05:00  INFO 9704 --- [eventify-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : EventifyHikariPool - Shutdown completed.

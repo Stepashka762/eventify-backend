@@ -1,0 +1,188 @@
+
+spring:
+  application:
+    name: eventify-backend
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eventify_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      pool-name: EventifyHikariPool
+
+  # Настройки JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+    open-in-view: false
+
+
+  liquibase:
+    enabled: false
+
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      fail-on-empty-beans: false
+    deserialization:
+      fail-on-unknown-properties: false
+    time-zone: UTC
+    default-property-inclusion: non_null
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+
+server:
+  port: 8081
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+    include-stacktrace: never
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+  servlet:
+    context-path: /
+
+
+jwt:
+  secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+  expiration: 86400000
+  refresh-expiration: 604800000
+
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    try-it-out-enabled: true
+    filter: true
+    display-request-duration: true
+    doc-expansion: none
+  show-actuator: true
+  paths-to-match:
+    - /auth/**
+    - /admin/**
+    - /user/**
+    - /events/**
+    - /bookings/**
+
+
+logging:
+  level:
+    root: INFO
+    com.eventify.eventify_backend: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.data.jpa: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/eventify-backend.log
+    max-size: 10MB
+    max-history: 30
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+    metrics:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: Eventify Backend
+    version: 1.0.0
+    description: Event booking system API
+    java:
+      version: ${java.version}
+
+
+cors:
+  allowed-origins:
+    - http://localhost:3000
+    - http://localhost:4200
+    - http://localhost:8080
+    - http://localhost:8081
+    - http://frontend:3000
+  allowed-methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - OPTIONS
+    - PATCH
+  allowed-headers:
+    - Authorization
+    - Content-Type
+    - X-Requested-With
+    - Accept
+    - Origin
+    - Access-Control-Request-Method
+    - Access-Control-Request-Headers
+  allow-credentials: true
+  max-age: 3600
+
+
+booking:
+  expiry-minutes: 15
+  max-tickets-per-booking: 10
+  cleanup-interval-seconds: 60
+
+
+security:
+  bcrypt:
+    strength: 10
+
+
+notification:
+  telegram:
+    bot-token: ${TELEGRAM_BOT_TOKEN:}
+    bot-name: ${TELEGRAM_BOT_NAME:EventifyBot}
+  email:
+    enabled: ${EMAIL_ENABLED:false}
+    from: ${EMAIL_FROM:noreply@eventify.com}
+    host: ${EMAIL_HOST:smtp.gmail.com}
+    port: ${EMAIL_PORT:587}
+    username: ${EMAIL_USERNAME:}
+    password: ${EMAIL_PASSWORD:}
